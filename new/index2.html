@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>geTTickets | Онлайн продажа билетов</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.jquery.com/jquery-3.3.1.min.js">
+	<meta name="viewport" content="width=device-500px, initial-scale=1.0">
+</head>
+<body>
+	<header class="container-fluid">
+		<div class="row">
+			<div id="mg-1" class="col-md-2 headerDiv">
+				<h1 class="text10">LOGOTYPE</h1>
+			</div>
+			<div class="col-md-4"></div>
+			<div class="col-md-6 headerContent">
+				<a href='#' id="mg-1">О НАС</a>
+				<a href="#" id="mg-1">ПРЕИМУЩЕСТВА</a>
+				<a href="#" id="mg-1">ОПЛАТА</a>
+				<a href="#" id="mg-1">КОНТАКТЫ</a>
+			</div>
+		</div>
+	</header>
+
+	<div id="app"></div>
+	<script src='js/ajax/react.min.js'></script>
+	<script src='js/ajax/react-dom.min.js'></script>
+	<script src='js/ajax/index.min.js'></script>
+	<script src="js/index.js"></script>
+
+	<section class="container-fluid section2">
+		<div class="d-flex">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 div1">
+				<div class="text2">
+					<p>ЛУЧШИЙ СПОСОБ ПРОДАВАТЬ БИЛЕТЫ</p>
+				</div>
+				<div class="col-md-12 d-flex j-s-c-c">
+					<div class="col-md-2 line"></div>
+				</div>
+				<div class="text">
+					<p>Если вы хотите сделать покупку билетов удобной и мобильной для своих клиентов, наша система - идеальный вариант.</p>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>		
+	</section>
+
+	<section class="container-fluid section1">
+		<div class="d-flex">
+			<div class="col-md-05"></div>
+			<div class="col-md-7">
+				<div class="col-md-12">
+					<p class="mainText">ВАШИ ДЕНЬГИ ОСТАЮТСЯ У ВАС</p>
+					
+					<div class="col-md-2 line"></div>
+					<div class="col-md-11 m-0">
+						<p class="inText">Предосталяйте возможность своим посетителям покупать билеты быстро и безопасно. При этом все полученные средства поступают на ваш счет. Мы не берем никаких последующих абонентских плат и комиссий</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-45 m-buy">
+				<img class="buy" src="img/first-png.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid section1">
+		<div class="d-flex">
+			<div class="col-md-05"></div>
+			<div class="col-md-5">
+				<img class="system" src="img/second-png.png">
+			</div>
+			<div class="col-md-6 m-system">
+				<p class="mainText">СИСТЕМА НА ВАШЕМ САЙТЕ</p>
+				<div class="col-md-2 line"></div>
+				<p class="inText">Мы легко адаптируем систему под ваш сайт и стиль компании или создадим для вас уникальный сайт исходя из ваших пожеланий</p>
+			</div>
+			<div class="col-md-05"></div>
+		</div>
+	</section>
+
+	<section class="container-fluid section1">
+		<div class="d-flex">
+			<div class="col-md-05"></div>
+			<div class="col-md-6">
+				<p class="mainText">ПРОСТАЯ ПРОВЕРКА ПОДЛИННОСТИ БИЛЕТОВ</p>
+				<div class="col-md-2 line"></div>
+				<p class="inText">Считывание Barcode и QRcode в мобильном приложении, которое прилагается к системе. Приложение разработано на
+				платформах IOS и Android и привязано к веб версии</p>
+			</div>
+			<div class="col-md-5 section5">
+				<img class="check" src="img/third-png2.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid zayavka">
+		<div class="col-md-12 d-flex">
+			<div class="col-md-1"></div>
+			<div class="col-md-6 zayavkaText">
+				<p class="mainZayavka">ЗАПОЛНИТЕ ДАННЫЕ</p>
+				<p class="inZayavka">МЫ ОБЯЗАТЕЛЬНО СВЯЖЕМСЯ С ВАМИ</p>
+			</div>
+			<form action="send.php" method="post" class="col-md-4 inputs">
+				<div class="inputName">
+					<input type="text" name="nameofOrder" placeholder="Ваше имя" required>
+				</div>
+				<div class="inputEmail">
+					<input class="inputEmail" name="email" type="text" placeholder="Ваш e-mail" required>
+				</div>
+				<div class="buttonZayavka">
+					<button><p>Оставить заявку</p></button>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</form>
+	</section>
+
+	<section class="container-fluid section1">
+		<div class="d-flex">
+			<div class="col-md-05"></div>
+			<div class="col-md-5">
+				<img src="img/fourth-png.jpg">
+			</div>
+			<div class="col-md-6 m-money">
+				<p class="mainText">СПОСОБЫ ОПЛАТЫ</p>
+				<div class="col-md-2 line"></div>
+				<p class="inText">Система поддерживает любые методы оплаты и обеспечивает безопасные транзакции. Покупатели оплачивают билеты с помощью банковской карты, электронных денег, наличными или через терминалы</p>
+			</div>
+			<div class="col-md-05"></div>
+		</div>
+	</section>
+
+	<section class="container-fluid section1">
+		<div class="d-flex">
+			<div class="col-md-05"></div>
+			<div class="col-md-6">
+				<p class="mainText">ВАШИ КЛИЕНТЫ ВЫБИРАЮТ МЕСТА САМИ</p>
+				<div class="col-md-2 line"></div>
+				<p class="inText">Рисуем план посадочных мест и различных зон по вашему желанию. Разделим по необходим категориям и типам (стандарт, вип, фан зоны и т.д.). Клиенту остается только выбрать и забронировать/оплатить билет</p>
+			</div>
+			<div class="col-md-5 m-places">
+				<img class="places" src="img/fifth-png.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid oport">
+		<div class="d-flex">
+			<div class="col-md-12 ability">
+				<p>ЕЩЕ БОЛЬШЕ ВОЗМОЖНОСТЕЙ</p>
+			</div>
+			<div class="col-md-12 d-flex j-s-c-c">
+				<div class="col-md-15 line"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid zayavka">
+		<div class="col-md-12 d-flex">
+			<div class="col-md-1"></div>
+			<div class="col-md-6 zayavkaText">
+				<p class="mainZayavka">ЗАПОЛНИТЕ ДАННЫЕ</p>
+				<p class="inZayavka">МЫ ОБЯЗАТЕЛЬНО СВЯЖЕМСЯ С ВАМИ</p>
+			</div>
+			<form action="send.php" method="post" class="col-md-4 inputs">
+				<div class="inputName">
+					<input type="text" name="nameofOrder" placeholder="Ваше имя" required>
+				</div>
+				<div class="inputEmail">
+					<input class="inputEmail" name="email" type="text" placeholder="Ваш e-mail" required>
+				</div>
+				<div class="buttonZayavka">
+					<button><p>Оставить заявку</p></button>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</form>
+	</section>
+
+	<section class="container-fluid section1">
+		<div class="d-flex">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 textLast">
+				<p class="mainText3">ГОРАЗДО МЕНЬШЕ РАБОТЫ ДЛЯ ВАС</p>
+				
+				<div class="col-md-12 d-flex j-s-c-c">
+					<div class="col-md-2 line"></div>
+				</div>
+
+				<p class="inText3">Мы знаем, что организация мероприятий и доступных продаж для посетителей - тяжелая работа. Поэтому мы хотим помочь вам облегчить данный процесс и достичь наилучшего результата!</p>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</section>
+
+	<section class="container-fluid section10">
+		<div class="d-flex">
+			<div class="col-md-05"></div>
+			<div class="col-md-7">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.699602905428!2d76.91304671493226!3d43.23675747913763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692d9f8f2147%3A0x285d7f198254b840!2sSmArt.Point!5e0!3m2!1sru!2skz!4v1543056593631" width="700" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="col-md-4 contact">
+				<p class="contacts">КОНТАКТЫ</p>
+				<div class="col-md-3 line"></div>
+				<div class="p-contacts">
+					<p class="address">Адрес</p>
+					<div class="d-flex">
+						<i style="font-size: 24px;" class="fa fa-map-marker"></i>
+						<p class="addressCont">г.Алматы, SmArt.Point, Байзакова 280</p>
+					</div>
+					<p class="phone">Телефоны</p>
+					<div class="d-flex">
+						<div class="iconPhone"></div>
+						<p class="phoneCont">+7(777)777-77-77 | +7(775)555-55-55</p>
+					</div>
+					<p class="email">Почта</p>
+					<div class="d-flex">
+						<i class="glyphicon glyphicon-envelope"></i>
+						<p class="emailCont">gettickets@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="container-fluid footerContent">
+		<p>© geTTickets.kz</p>
+	</footer>
+	
+</body>
+</html>
