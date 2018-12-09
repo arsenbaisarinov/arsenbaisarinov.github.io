@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/slider2.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div id="contenedor-slider" class="contenedor-slider">
+ <div id="slider" class="slider">
+    <section class="slider__section"><img src="http://welltechnically.com/wp-content/uploads/2013/08/android-wallpapers-700x300.jpg" class="slider__img"></section>
+    <section class="slider__section"><img src="http://pgembeddedsystems.org/images/vlsifront.png" class="slider__img"></section>
+    <section class="slider__section"><img src="http://welltechnically.com/wp-content/uploads/2013/09/android-widescreen-wallpaper-14165-hd-wallpapers-700x300.jpg" class="slider__img"></section>
+    <section class="slider__section"><img src="http://youghaltennisclub.ie/wp-content/uploads/2014/06/Tennis-Wallpaper-High-Definition-700x300.jpg" class="slider__img"></section>
+  </div>
+  <div id="btn-prev" class="btn-prev">&#60;</div>
+  <div id="btn-next" class="btn-next">&#62;</div>
+ </div>
+ <script>
+ 	var slider = $('#slider');
+//almacenar botones
+var siguiente = $('#btn-next');
+var anterior = $('#btn-prev');
+
+//mover ultima imagen al primer lugar
+$('#slider .slider__section:last').insertBefore('#slider .slider__section:first');
+//mostrar la primera imagen con un margen de -100%
+slider.css('margin-left', '-'+100+'%');
+
+function moverD() {
+	slider.animate({
+		marginLeft:'-'+200+'%'
+	} ,700, function(){
+		$('#slider .slider__section:first').insertAfter('#slider .slider__section:last');
+		slider.css('margin-left', '-'+100+'%');
+	});
+}
+
+function moverI() {
+	slider.animate({
+		marginLeft:0
+	} ,700, function(){
+		$('#slider .slider__section:last').insertBefore('#slider .slider__section:first');
+		sli der.css('margin-left', '-'+100+'%');
+	});
+}
+
+function autoplay() {
+	interval = setInterval(function(){
+		moverD();
+	}, 5000);
+}
+siguiente.on('click',function() {
+	moverD();
+	clearInterval(interval);
+	autoplay();
+});
+
+anterior.on('click',function() {
+	moverI();
+	clearInterval(interval);
+	autoplay();
+});
+
+
+autoplay();
+ </script>
+	
+</body>
+</html>
