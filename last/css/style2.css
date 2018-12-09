@@ -1524,7 +1524,12 @@ button p{
 	}
 }
 @media (max-width: 426px){
-
+	.section10{
+		padding: 15px 0;
+	}
+	#map{
+		height: 300px;
+	}
 	.adpv-line{
 		display: flex;
 		justify-content: center;
