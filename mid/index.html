@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>geTTickets | Онлайн продажа билетов</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/menu-bar.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+</head>
+<body>
+	<header id="header" class="container-fluid">
+		<div class="row js-phone">
+			<div class="col-md-1 none-d-768"></div>
+			<div id="logo" class="col-md-2 headerDiv">
+				<a href="#sliders"><img id="whitelogo" src="img/logowhite.png"></a>
+				<a href="#sliders"><img id="blacklogo" src="img/logoblack.png"></a>
+			</div>
+			<div class="col-md-3 none-d-768"></div>
+			<div id="menu" class="col-md-6 headerContent d-flex">
+				<div>
+					<a class="headerLinks" id="links" href='#about' >О НАС</a>
+				</div>
+				<div>
+					<a class="headerLinks" href="#prem" id="links2">ПРЕИМУЩЕСТВА</a>
+				</div>
+				<div>
+					<a class="headerLinks" href="#money" id="links3">ОПЛАТА</a>
+				</div>
+				<div>
+					<a class="headerLinks" href="#cont" id="links4">КОНТАКТЫ</a>
+				</div>
+			</div>
+			<div id="menu-bar" class="menu-bar" onclick="openNav()">
+				<i id="menui" class="fas fa-bars"></i>
+			</div>
+			<div id="close" onclick="closeNav()">
+					<i id="closei" class="fa fa-close"></i>
+			</div>
+			<div id="myNav" class="overlay">
+			  <div class="overlay-content">
+			  	<div class="d-flex contact-adpv j-s-c ">
+					<div class="d-flex col-md-6 pd-0">
+						<i class="material-icons">phone</i> <a href="tel:+77753430404"> 8(775) 343 04 04</a>
+					</div>
+					<div class="d-flex col-md-6 left-cont">
+						<i class="material-icons">mail_outline</i> <a href="#"> toomadicom@mail.ru</a>
+					</div>
+				</div>
+
+				<div id="adpv-menu"	class="second-links-adpv">
+					<a id="links" href="#about"  onclick="closeNav()">О НАС</a>
+					<a id="links2" href="#prem" onclick="closeNav()">ПРЕИМУЩЕСТВА</a>
+					<a id="links3" href="#money" onclick="closeNav()">ОПЛАТА</a>
+					<a id="links4" href="#cont" onclick="closeNav()">КОНТАКТЫ</a>
+				</div>
+			    
+			  </div>
+			</div>
+		</div> 
+	</header>
+	<div id="nav_up" class="nav_up"><i class="material-icons">arrow_upward</i></div>
+	<section class="cd-hero">
+
+  <ul id="sliders" class="cd-hero-slider autoplay">
+
+    <li class="selected" id="li-1">
+      <div class="cd-full-width">
+        <div class="cd-content">
+          <p class="ticket">БИЛЕТНАЯ СИСТЕМА</p>
+          <p class="ticket-type">НА КОНЦЕРТ</p>
+          <div class="buttonZayavka">
+					<button id="btn"><p>Оставить заявку</p></button>
+			</div>
+        </div>
+      </div>
+    </li>
+
+    <li id="li-2">
+      <div class="cd-full-width">
+        <div class="cd-content">
+          <p class="ticket">БИЛЕТНАЯ СИСТЕМА</p>
+          <p class="ticket-type">В КИНО</p>
+          <div class="buttonZayavka">
+					<button id="btn"><p>Оставить заявку</p></button>
+				</div>
+        </div>
+      </div>
+    </li>
+
+    <li id="li-3">
+      <div class="cd-full-width">
+        <div class="cd-content">
+          <p class="ticket">БИЛЕТНАЯ СИСТЕМА</p>
+          <p class="ticket-type">В ТЕАТР</p>
+          <div class="buttonZayavka">
+					<button id="btn"><p>Оставить заявку</p></button>
+				</div>
+        </div>
+      </div>
+    </li>
+
+    <li id="li-4">
+     <div class="cd-full-width">
+        <div class="cd-content">
+          <p class="ticket">БИЛЕТНАЯ СИСТЕМА</p>
+          <p class="ticket-type">В РАЗВЛЕКАТЕЛЬНОЕ ЗАВЕДЕНИЕ</p>
+ 			<div class="buttonZayavka">
+					<button id="btn"><p>Оставить заявку</p></button>
+				</div>
+        </div>
+      </div>
+    </li>
+
+    <li id="li-5">
+      <div class="cd-full-width">
+        <div class="cd-content">
+          <p class="ticket">БИЛЕТНАЯ СИСТЕМА</p>
+          <p class="ticket-type">НА СТАДИОН</p>
+          <div class="buttonZayavka">
+					<button id="btn"><p>Оставить заявку</p></button>
+				</div>
+        </div>
+      </div>
+    </li>
+
+    <li id="li-6">
+      <div class="cd-full-width">
+        <div class="cd-content">
+          <p class="ticket">БИЛЕТНАЯ СИСТЕМА</p>
+          <p class="ticket-type">В ПАРК РАЗВЛЕЧЕНИЙ</p>
+          <div class="buttonZayavka">
+				<button id="btn"><p>Оставить заявку</p></button>
+			</div>
+        </div>
+      </div>
+    </li>
+
+    <li id="li-7">
+      <div class="cd-full-width">
+        <div class="cd-content">
+          <p class="ticket">БИЛЕТНАЯ СИСТЕМА</p>
+          <p class="ticket-type">В РЕСТОРАН</p>
+          <div class="buttonZayavka">
+					<button id="btn"><p>Оставить заявку</p></button>
+				</div>
+        </div>
+      </div>
+    </li>
+
+    <li id="li-8">
+      <div class="cd-full-width">
+        <div class="cd-content">
+          <p class="ticket">БИЛЕТНАЯ СИСТЕМА</p>
+          <p class="ticket-type">В ЦИРК</p>
+          <div class="buttonZayavka">
+					<button  id="btn"><p>Оставить заявку</p></button>
+				</div>
+        </div>
+      </div>
+    </li>
+
+    <li id="li-9">
+      <div class="cd-full-width">
+        <div class="cd-content">
+          <p class="ticket">БИЛЕТНАЯ СИСТЕМА</p>
+          <p class="ticket-type">НА КУРОРТНЫЙ КОМПЛЕКС</p>
+    		<div class="buttonZayavka">
+					<button id="btn"><p>Оставить заявку</p></button>
+				</div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <div class="cd-slider-nav">
+
+    <!--<span class="cd-marker"></span>-->
+    <nav class="text">
+      <a href="#0" class="selected">КОНЦЕРТ</a>
+      <a href="#0">КИНО</a>
+      <a href="#0">ТЕАТР</a>
+      <a href="#0">РАЗВЛЕКАТЕЛЬНОЕ ЗАВЕДЕНИЕ</a>
+      <a href="#0">СТАДИОН</a>
+      <a href="#0">ПАРК РАЗВЛЕЧЕНИЙ</a>
+      <a href="#0">РЕСТОРАН</a>
+      <a href="#0">ЦИРК</a>
+      <a href="#0">КУРОРТНЫЙ КОМПЛЕКС</a>
+    </nav>
+  </div>
+</section>
+
+	<section class="container-fluid section2">
+		<div class="d-flex jsc-phone">
+			<div class="col-md-2 cl-05 none-d-426"></div>
+			<div class="col-md-8 div1">   
+				<div class="text2">
+					<p>ЛУЧШИЙ СПОСОБ ПРОДАВАТЬ БИЛЕТЫ</p>
+				</div>
+				<div class="col-md-12 d-flex j-s-c-c">
+					<div class="col-md-2 line"></div>
+				</div>
+				<div class="text">
+					<p>Если вы хотите сделать покупку билетов удобной и мобильной для своих клиентов, наша система - идеальный вариант.</p>
+				</div>
+			</div>
+			<div class="col-md-2 cl-05 none-d-426"></div>
+		</div>		
+	</section>
+	<section class="container-fluid section1">
+		<div class="d-flex">
+			<div class="col-md-05"></div>
+			<div class="col-md-6">
+				<p class="mainText">ВАШИ ДЕНЬГИ ОСТАЮТСЯ У ВАС</p>
+				<div class="adpv-line"><div class="col-md-2 line"></div></div>
+				<p class="inText">Предосталяйте возможность своим посетителям покупать билеты быстро и безопасно. При этом все полученные средства поступают на ваш счет. Мы не берем никаких последующих абонентских плат и комиссий</p>
+			</div>
+			<div class="col-md-5 section5">
+				<img class="buy adpv-width" src="img/first-png.png">
+			</div>
+		</div>
+	</section>
+
+	
+
+	<section id="about" class="container-fluid section1">
+		<div class="d-flex">
+			<div class="col-md-05"></div>
+			<div class="col-md-5">
+				<img class="system none-d-426" src="img/second-png.png">
+			</div>
+			<div class="col-md-6 m-system">
+				<p class="mainText adaptive">СИСТЕМА НА ВАШЕМ САЙТЕ</p>
+				<div class="adpv-line"><div class="col-md-2 line"></div></div>
+				<p class="inText">Мы легко адаптируем систему под ваш сайт и стиль компании или создадим для вас уникальный сайт исходя из ваших пожеланий</p>
+			</div>
+			<div class="col-md-5 ">
+				<img class="system1 none-dd" src="img/second-png.png">
+			</div>
+			<div class="col-md-05"></div>
+		</div>
+	</section>
+
+	<section class="container-fluid section1">
+		<div class="d-flex">
+			<div class="col-md-05"></div>
+			<div class="col-md-6">
+				<p class="mainText">ПРОСТАЯ ПРОВЕРКА ПОДЛИННОСТИ БИЛЕТОВ</p>
+				<div class="adpv-line"><div class="col-md-2 line"></div></div>
+				<p class="inText">Считывание Barcode и QRcode в мобильном приложении, которое прилагается к системе. Приложение разработано на
+				платформах IOS и Android и привязано к веб версии</p>
+			</div>
+			<div class="col-md-5 section5">
+				<img class="check adpv-width" src="img/third-png2.png">
+			</div>
+		</div>
+	</section>
+	
+	<section class="container-fluid zayavka">
+		<div class="col-md-12 d-flex">
+			<div class="col-md-1 none-d-768"></div>
+			<div class="col-md-6 zayavkaText">
+				<p class="mainZayavka">ЗАПОЛНИТЕ ДАННЫЕ</p>
+				<p class="inZayavka">МЫ ОБЯЗАТЕЛЬНО СВЯЖЕМСЯ С ВАМИ</p>
+			</div>
+			<form action="send.php" method="post" class="col-md-5 inputs">
+				<div class="d-flex div-center">
+					<div class="iconName">
+						<img style="color: black;height: 25px; width: 25px" src="img/user-regular.svg"></i>
+					</div>
+					<div>
+						<input type="text" name="nameofOrder" placeholder="Ваше имя" required>
+					</div>
+				</div>
+				<div class="d-flex div-center">
+					<div class="iconPhone">
+						<i style="color: black;font-size: 27px" class="fa fa-phone"></i>
+					</div>
+					<div class="inputPhone">
+						<input name="phone" type="text" placeholder="Ваш телефон" required>
+					</div>
+				</div>
+				<div class="buttonZayavka">
+					<button><p>Оставить заявку</p></button>
+				</div>
+			<div class="col-md-1 none-d-768"></div>
+		</form>
+	</section>
+
+
+	<section class="container-fluid section1">
+		<div class="d-flex">
+			<div class="col-md-05"></div>
+			<div class="col-md-5">
+				<img class="system none-d-426" src="img/fourth-png.jpg">
+			</div>
+			<div class="col-md-6 m-money">
+				<p class="mainText">СПОСОБЫ ОПЛАТЫ</p>
+				<div class="adpv-line"><div class="col-md-2 line"></div></div>
+				<p class="inText">Система поддерживает любые методы оплаты и обеспечивает безопасные транзакции. Покупатели оплачивают билеты с помощью банковской карты, электронных денег, наличными или через терминалы</p>
+			</div>
+			<div class="col-md-5">
+				<img class="system1 none-dd" src="img/fourth-png.jpg">
+			</div>
+			<div class="col-md-05"></div>
+		</div>
+	</section>
+
+	<section class="container-fluid section1">
+		<div class="d-flex">
+			<div class="col-md-05"></div>
+			<div class="col-md-6">
+				<p class="mainText">ВАШИ КЛИЕНТЫ ВЫБИРАЮТ МЕСТА САМИ</p>
+				<div class="adpv-line"><div class="col-md-2 line"></div></div>
+				<p class="inText">Рисуем план посадочных мест и различных зон по вашему желанию. Разделим по необходим категориям и типам (стандарт, вип, фан зоны и т.д.). Клиенту остается только выбрать и забронировать/оплатить билет</p>
+			</div>
+			<div class="col-md-5 m-places">
+				<img class="places adpv-width" src="img/fifth-png.png">
+			</div>
+		</div>
+	</section>
+
+	<section id="prem" class="container-fluid oport">
+		<div class="d-flex">
+			<div class="col-md-12 ability">
+				<p>ЕЩЕ БОЛЬШЕ ВОЗМОЖНОСТЕЙ</p>
+			</div>
+			<div class="col-md-12 d-flex j-s-c-c">
+				<div class="col-md-15 line"></div>
+			</div>
+			<div class="col-md-12 d-flex adap">
+				<div class="col-md-1 none-d"></div>
+				<div class="col-md-23 abilityContTop abilityCont">
+					<div class="d-flex j-s-c-c">
+						<img src="img/infinity.png">
+					</div>
+					<p class="abilityMain abilityInfinity">Неограниченное количество</p>
+					<p class="abilityIn">Создайте любое количество видов билетов для одного или нескольких событий</p>
+				</div>
+				<div class="col-md-23 abilityContPad abilityContTop abilityCont">
+					<div class="d-flex j-s-c-c">
+						<img src="img/sale.png">
+					</div>
+					<p class="abilityMain abilityMainPad">Скидочные коды</p>
+					<p class="abilityIn abilityInPad">Увеличьте продажи, создав скидочные коды, доступные для всех и только определенных типов билетов</p>
+				</div>
+				<div class="col-md-23 abilityContPad abilityContTop abilityCont">
+					<div class="d-flex j-s-c-c">
+						<img src="img/diagram.png">
+					</div>
+					<p class="abilityMain abilityMainPad">Отчетность</p>
+					<p class="abilityIn abilityInPad">Получайте отчеты с каждого проведенного мероприятия</p>
+				</div>
+				<div class="col-md-23 abilityContPad abilityContTop abilityCont"> 
+					<div class="d-flex j-s-c-c">
+						<img src="img/cellphone.png">
+					</div>
+					<p class="abilityMain abilityInfinity">Продажа билетов в социальных сетях</p>
+					<p class="abilityIn">Продавайте билеты в социальных сетях, с помощью специальных виджетов</p>
+				</div>
+				<div class="col-md-1 none-d"></div>
+			</div>
+			
+			<div class="col-md-12 d-flex adap">
+				<div class="col-md-1 none-d"></div>
+			<div class="col-md-23 abilityContTop2 abilityCont">
+				<div class="d-flex j-s-c-c">
+					<img src="img/rating.png">
+				</div>
+				<p class="abilityMain abilityInfinity">Хранение данных о клиенте</p>
+				<p class="abilityIn">Сохраняйте информацию о постоянных покупателях для улучшения качества и расширения базы клиентов</p>
+			</div>
+			<div class="col-md-23 abilityContPad abilityContTop2 abilityCont">
+				<div class="d-flex j-s-c-c">
+					<img src="img/hands.png">
+				</div>
+				<p class="abilityMain abilityInfinity">Контроль денежного потока</p>
+				<p class="abilityIn">Удобная и безопасная система управления финансовыми операциями</p>
+			</div>
+			<div class="col-md-23 abilityContPad abilityContTop2 abilityCont">
+				<div class="d-flex j-s-c-c">
+					<img src="img/diagram.png">
+				</div>
+				<p class="abilityMain abilityMainPad">Отчетность</p>
+				<p class="abilityIn abilityInPad">Получайте отчеты с каждого проведенного мероприятия</p>
+			</div>
+			<div class="col-md-23 abilityContPad abilityContTop2 abilityCont">
+				<div class="d-flex j-s-c-c">
+					<img src="img/cellphone.png">
+				</div>
+				<p class="abilityMain abilityInfinity">Продажа билетов в социальных сетях</p>
+				<p class="abilityIn">Продавайте билеты в социальных сетях, с помощью специальных виджетов</p>
+			</div>
+			<div class="col-md-1 none-d"></div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="container-fluid zayavka">
+		<div class="col-md-12 d-flex">
+			<div class="col-md-1 none-d-768"></div>
+			<div class="col-md-6 zayavkaText">
+				<p class="mainZayavka">ЗАПОЛНИТЕ ДАННЫЕ</p>
+				<p class="inZayavka">МЫ ОБЯЗАТЕЛЬНО СВЯЖЕМСЯ С ВАМИ</p>
+			</div>
+			<form action="send.php" method="post" class="col-md-5 inputs">
+				<div class="d-flex div-center">
+					<div class="iconName">
+						<img style="color: black;height: 25px; width: 25px" src="img/user-regular.svg"></i>
+					</div>
+					<div>
+						<input type="text" name="nameofOrder" placeholder="Ваше имя" required>
+					</div>
+				</div>
+				<div class="d-flex div-center">
+					<div class="iconPhone">
+						<i style="color: black;font-size: 27px" class="fa fa-phone"></i>
+					</div>
+					<div class="inputPhone">
+						<input name="phone" type="text" placeholder="Ваш телефон" required>
+					</div>
+				</div>
+				<div class="buttonZayavka">
+					<button><p>Оставить заявку</p></button>
+				</div>
+			<div class="col-md-1 none-d-768"></div>
+		</form>
+	</section>
+
+	<section class="container-fluid section1">
+		<div class="d-flex">
+			<div class="col-md-2 cl-05"></div>
+			<div class="col-md-8 textLast div1">
+				<p class="mainText3">ГОРАЗДО МЕНЬШЕ РАБОТЫ ДЛЯ ВАС</p>
+				
+				<div class="col-md-12 d-flex j-s-c-c">
+					<div class="col-md-2 line"></div>
+				</div>
+
+				<p class="inText3">Мы знаем, что организация мероприятий и доступных продаж для посетителей - тяжелая работа. Поэтому мы хотим помочь вам облегчить данный процесс и достичь наилучшего результата!</p>
+			</div>
+			<div class="col-md-2 cl-05"></div>
+		</div>
+	</section>
+
+	<section id="cont" class="container-fluid section10">
+		<div class="d-flex">
+			<div class="col-md-05 none-d"></div>
+			<div class="col-md-7">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.699602905428!2d76.91304671493226!3d43.23675747913763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692d9f8f2147%3A0x285d7f198254b840!2sSmArt.Point!5e0!3m2!1sru!2skz!4v1543056593631" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="col-md-4 contact">
+				<div class="h-text"><p class="contacts">КОНТАКТЫ</p>	</div>
+				
+				<div class="col-md-12 jsc-phone d-flex pd-0"><div class="col-md-3 line "></div></div>
+				<div class="p-contacts">
+					<p class="address">Адрес</p>
+					<div class="d-flex">
+						<i style="font-size: 24px;" class="fa fa-map-marker"></i>
+						<p class="addressCont">г.Алматы, SmArt.Point, Байзакова 280</p>
+					</div>
+					<p class="phone">Телефоны</p>
+					<div class="d-flex">
+						<i class="fa fa-phone" style="font-size: 22px;padding-top: 3px;"></i>
+						<p class="phoneCont">+7(777)777-77-77 | +7(775)555-55-55</p>
+					</div>
+					<p class="email">Почта</p>
+					<div class="d-flex iconSMS">
+						<i class="fa fa-envelope" style="padding-top: 5px; font-size: 18px"></i>
+						<p class="emailCont">gettickets@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	<footer class="container-fluid footerContent">
+		<p>© geTTickets.kz</p>
+	</footer>
+
+	<script>
+    window.onscroll = function() {scrollFunction(),scrollF()};
+     function scrollF() {
+		    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+		        document.getElementById("nav_up").style.display = "block";
+		    } else {
+		        document.getElementById("nav_up").style.display = "none";
+		    }
+		}
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("header").style.background = "white";
+            document.getElementById("blacklogo").style.display = "block";
+            document.getElementById("whitelogo").style.display = "none";
+
+            document.getElementById("header").style.boxShadow = "0 0.5px 20px rgba(0, 0, 0, .3)";
+            document.getElementById("links").style.color = "black";
+            document.getElementById("links2").style.color = "black";
+            document.getElementById("links3").style.color = "black";
+            document.getElementById("links4").style.color = "black";
+            document.getElementById("menui").style.color = "black";
+            document.getElementById("closei").style.color = "black";
+
+            document.getElementById("header").style.transition = "0.7s";
+        } else {
+        	document.getElementById("blacklogo").style.display = "none";
+            document.getElementById("whitelogo").style.display = "block";
+            
+        	document.getElementById("header").style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0)";
+            document.getElementById("header").style.background = "transparent";
+            document.getElementById("links").style.color = "white";
+            document.getElementById("links2").style.color = "white";
+            document.getElementById("links3").style.color = "white";
+            document.getElementById("links4").style.color = "white";
+            document.getElementById("menui").style.color = "white";
+            document.getElementById("closei").style.color = "white";
+        }
+    }
+    
+  </script>
+  <script src="js/jquery-1.3.2.js" type="text/javascript"></script>
+		<script>
+			$(function() {
+				var $elem = $('#content');
+				
+				$('#nav_up').fadeIn('default');  
+
+				$('#nav_up').click(
+					function (e) {
+						$('html, body').animate({scrollTop: '0px'}, 800);
+					}
+				);
+            });
+    </script>
+ <script type="text/javascript">
+	    $(document).ready(function(){
+   		 $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    		});
+		});
+</script>
+ <script type="text/javascript">
+	    $(document).ready(function(){
+   		 $("#logo").on("click","a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    		});
+		});
+</script>
+<script type="text/javascript">
+	    $(document).ready(function(){
+   		 $("#adpv-menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    		});
+		});
+</script>
+	
+<script>
+  var slidesWrapper = $('.cd-hero-slider');
+
+  //check if a .cd-hero-slider exists in the DOM
+  if ( slidesWrapper.length > 0 ) {
+
+    var sliderNav = $('.cd-slider-nav');
+    var slidesNumber = slidesWrapper.children('li').length;
+    var visibleSlidePosition = 0;
+    var autoPlayId;
+    var autoPlayDelay = 3500;
+
+    // autoplay slider
+    setAutoplay(slidesWrapper, slidesNumber, autoPlayDelay);
+
+    // change visible slide
+    sliderNav.on('click', 'a', function(event) {
+      event.preventDefault();
+
+      var selectedItem = $(this);
+
+      if(!selectedItem.hasClass('selected')) {
+
+        // if it's not already selected
+        var selectedPosition = selectedItem.index();
+        var activePosition = slidesWrapper.find('li.selected').index();
+
+        if( activePosition < selectedPosition) {
+          nextSlide(slidesWrapper.find('.selected'), slidesWrapper, sliderNav, selectedPosition);
+        } else {
+          prevSlide(slidesWrapper.find('.selected'), slidesWrapper, sliderNav, selectedPosition);
+        }
+
+        //this is used for the autoplay
+        visibleSlidePosition = selectedPosition;
+
+        updateSliderNavigation(sliderNav, selectedPosition);
+        setAutoplay(slidesWrapper, slidesNumber, autoPlayDelay);
+      }
+    });
+  }
+
+  function nextSlide(visibleSlide, container, pagination, n){
+    visibleSlide.removeClass('selected from-left from-right').addClass('is-moving').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+      visibleSlide.removeClass('is-moving');
+    });
+
+    container.children('li').eq(n).addClass('selected from-right').prevAll().addClass('move-left');
+  }
+
+  function prevSlide(visibleSlide, container, pagination, n){
+    visibleSlide.removeClass('selected from-left from-right').addClass('is-moving').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+      visibleSlide.removeClass('is-moving');
+    });
+    container.children('li').eq(n).addClass('selected from-left').removeClass('move-left').nextAll().removeClass('move-left');
+  }
+
+  function updateSliderNavigation(pagination, n) {
+    var navigationDot = pagination.find('.selected');
+    navigationDot.removeClass('selected');
+    pagination.find('a').eq(n).addClass('selected');
+  }
+
+  // autoplay
+   function setAutoplay(wrapper, length, delay) {
+    if(wrapper.hasClass('autoplay')) {
+      clearInterval(autoPlayId);
+      autoPlayId = window.setInterval(function(){autoplaySlider(length)}, delay);
+    }
+   }
+
+  function autoplaySlider(length) {
+    if( visibleSlidePosition < length - 1) {
+      nextSlide(slidesWrapper.find('.selected'), slidesWrapper, sliderNav, visibleSlidePosition + 1);
+      visibleSlidePosition +=1;
+    } else {
+      prevSlide(slidesWrapper.find('.selected'), slidesWrapper, sliderNav, 0);
+      visibleSlidePosition = 0;
+    }
+    updateSliderNavigation(sliderNav, visibleSlidePosition);
+  }
+
+</script>
+<script>
+		var menu = document.getElementById("menu-bar");
+		var close = document.getElementById("close");
+		var header = document.getElementById("header");
+		function openNav() {
+			document.getElementById("myNav").style.height = "40%";
+			menu.style.display = "none";
+			close.style.display = "block";
+			header.style.background = "rgba(0,0,0,0.9)";
+			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+				header.style.background = "white";
+			}
+			else{
+				header.style.background = "rgba(0,0,0,0.9)";
+			}
+		}
+		function closeNav() {
+		  document.getElementById("myNav").style.height = "0%";
+		  menu.style.display = "block";
+		  close.style.display = "none";
+		  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+				header.style.background = "white";
+			}
+			else{
+				header.style.background = "transparent";
+			}
+		}
+	</script>
+</body>
+</html>
