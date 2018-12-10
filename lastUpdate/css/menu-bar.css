@@ -1,0 +1,250 @@
+.contact-adpv{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid linear-gradient(to right, rgba(0,191,255,0) 10%,rgba(0,191,255,0.8) 24%,rgba(0,191,255,1) 35%,rgba(0,191,255,1) 50%,rgba(0,191,255,1) 65%,rgba(0,191,255,0.8) 76%,rgba(0,191,255,0) 90%);
+}
+.contact-adpv i{
+    margin-top: 2px;
+    color: dodgerblue;
+    font-size: 20px ;
+    font-weight: 100;
+}
+.contact-adpv p{
+    font-size: 12px;
+    color: dodgerblue;
+}
+.contact-adpv a{
+    margin-top: 0px;
+    font-size: 16px;
+    color: deepskyblue;
+    padding: 0;
+    margin-left: 5px;
+}
+.left-cont{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.second-links-adpv{
+    padding-top: 10px;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 58px;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.7s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+}
+.second-links-adpv{
+
+}
+.second-links-adpv a {
+    padding: 5px 0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    color: rgba(255,255,255, 0.6);
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    #close{
+        padding-bottom: 18px;
+        padding-top: 18px;
+    }
+    #close i{
+        font-size: 22px;
+        color: white;
+    }
+    .menu-bar{
+        padding-bottom: 18px;
+        padding-top: 18px;
+    }
+    .menu-bar i{
+        font-size: 22px;
+        color: white;
+    }
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+@media screen and  (max-width: 376px){
+    .contact-adpv a{
+        font-size: 14px !important;
+    }
+}
+@media screen and  (max-width: 320px){
+    .contact-adpv a{
+        font-size: 12px !important;
+    }
+}
+
+/** SCROLL TOP **/
+#nav_up{
+    display: block;
+}
+.nav_up{
+    max-width: 46px;
+    display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9;
+  border: 1px solid rgba(0,0,0,0.2);
+  outline: none;
+  background-color: gold;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+}
+.nav_up i{
+    color: #000;
+    font-size: 36px;
+}
+.nav_up:hover i{
+    color: gold;
+}
+
+.nav_up:hover {
+  background-color: #222;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/**SEARCH**/
+.overlay1 {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 55px;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content1 {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay1 a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay1 a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay1 .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: rgba(255,255,255,0.9);
+    margin: 12px 0 !important;
+}
+form.example input[type=text]:focus{
+    background: white;
+}
+
+form.example button {
+     margin: 12px 0 !important;
+    float: left;
+    width: 46px;
+    height: 46px;
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    font-size: 14px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media (max-width: 768px){
+    #close1{
+    display: none;
+    padding-top: 7px;
+    padding-right: 5px;
+    }
+}
+@media (max-width: 376px){
+    #close1{
+    display: none;
+    padding-top: 7px;
+    padding-right: 6px;
+    }
+}
+@media (max-width: 361px){
+    #close1{
+    display: none;
+    padding-top: 7px;
+    padding-right: 5px;
+    }
+}
